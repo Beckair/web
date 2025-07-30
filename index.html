@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BECKAIR - Tecnología Reacondicionada</title>
+    <meta name="description" content="Venta de equipos electrónicos reacondicionados y accesorios tecnológicos. Smartphones, tablets, laptops y más con certificación de calidad.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span>BECK</span>AIR
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count"></span>
+</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Tecnología inteligente, precios increíbles</h1>
+            <p>Dispositivos reacondicionados con certificación de calidad y garantía.</p>
+            <a href="#productos" class="btn">Ver productos</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-devices.jpg" alt="Dispositivos electrónicos">
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefit-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Certificados</h3>
+                <p>Productos probados y certificados por expertos.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Garantía</h3>
+                <p>12 meses de garantía en todos nuestros productos.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-truck"></i>
+                <h3>Envío Rápido</h3>
+                <p>Entrega en 24-48 horas en toda la ciudad.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Ecológico</h3>
+                <p>Contribuye a reducir los desechos electrónicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="featured-products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-badge">-30%</div>
+                    <img src="productos/iphone12.jpg" alt="iPhone 12 Reacondicionado">
+                    <div class="product-info">
+                        <h3>iPhone 12 64GB</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">$799</span>
+                            <span class="current-price">$559</span>
+                        </div>
+						
+                        <button class="btn add-to-cart"
+        data-id="iphone12" 
+        data-name="iPhone 12 64GB" 
+        data-price="559"
+        data-img="productos/iphone12.jpg">
+    Añadir al carrito
+</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="productos/macbook-air.jpg" alt="MacBook Air Reacondicionada">
+                    <div class="product-info">
+                        <h3>MacBook Air M1 2020</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$899</span>
+                        </div>
+                        <button class="btn add-to-cart" 
+        data-id="macbookair" 
+        data-name="MacBook Air M1 2020" 
+        data-price="899"
+        data-img="productos/macbook-air.jpg">
+    Añadir al carrito
+</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-badge">Nuevo</div>
+                    <img src="productos/samsung-s21.jpg" alt="Samsung S21 Reacondicionado">
+                    <div class="product-info">
+                        <h3>Samsung Galaxy S21</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(32)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">$699</span>
+                            <span class="current-price">$499</span>
+                        </div>
+                        <button class="btn add-to-cart" 
+        data-id="galaxys21" 
+        data-name="Samsung Galaxy S21" 
+        data-price="499"
+        data-img="productos/samsung-s21.jpg">
+    Añadir al carrito
+</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <img src="productos/airpods-pro.png" alt="AirPods Pro Reacondicionados">
+                    <div class="product-info">
+                        <h3>AirPods Pro (2da Gen)</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(45)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">$249</span>
+                            <span class="current-price">$179</span>
+                        </div>
+                        <button class="btn add-to-cart" 
+        data-id="airpods" 
+        data-name="AirPods Pro (2da Gen)" 
+        data-price="179"
+        data-img="productos/airpods-pro.png">
+    Añadir al carrito
+</button>
+                    </div>
+                </div>
+				<!-- Producto 5 (Nuevo) -->
+                <div class="product-card">
+                    <div class="product-badge">-25%</div>
+                    <img src="productos/ipad-air.jpg" alt="iPad Air Reacondicionado">
+                    <div class="product-info">
+                        <h3>iPad Air 4ta Gen</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(28)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">$599</span>
+                            <span class="current-price">$449</span>
+                        </div>
+                        <button class="btn add-to-cart" 
+        data-id="ipad-air" 
+        data-name="iPad Air 4ta Gen" 
+        data-price="499"
+        data-img="productos/ipad-air.jpg">
+    Añadir al carrito
+</button>
+                    </div>
+                </div>
+
+                <!-- Producto 6 (Nuevo) -->
+                <div class="product-card">
+                    <div class="product-badge">Oferta</div>
+                    <img src="productos/samsung-watch.jpg" alt="Samsung Galaxy Watch">
+                    <div class="product-info">
+                        <h3>Samsung Galaxy Watch 4</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(15)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">$299</span>
+                            <span class="current-price">$199</span>
+                        </div>
+                        <button class="btn add-to-cart" 
+        data-id="watch 4" 
+        data-name="Samsung Galaxy Watch 4" 
+        data-price="199"
+        data-img="productos/samsung-watch.jpg">
+    Añadir al carrito
+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Servicio Técnico</h3>
+                    <p>Reparación y mantenimiento de dispositivos electrónicos por técnicos certificados.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Reacondicionamiento</h3>
+                    <p>Proceso riguroso para devolver a los dispositivos su estado óptimo.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Recogida a Domicilio</h3>
+                    <p>Recogemos tus dispositivos para reparación o reacondicionamiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Sobre BECKAIR</h2>
+                <p>En BECKAIR nos dedicamos a ofrecer tecnología de calidad a precios accesibles, contribuyendo al mismo tiempo a reducir el impacto ambiental de los desechos electrónicos.</p>
+                <p>Nuestro proceso de reacondicionamiento garantiza que cada dispositivo cumpla con los más altos estándares de calidad antes de llegar a tus manos.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5,000+</span>
+                        <span class="stat-label">Clientes satisfechos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Evaluaciones positivas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Meses de garantía</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/about-team.png" alt="Equipo BECKAIR">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bulevar del Hipodromo 415, San Salvador, El Salvador</p>
+                    <p><i class="fas fa-phone"></i> +503 7639-5016</p>
+                    <p><i class="fas fa-envelope"></i> info@beckair.com</p>
+                    <p><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 7pm</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span>BECK</span>AIR
+                    </a>
+                    <p>Tecnología reacondicionada con calidad certificada y compromiso ecológico.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Políticas</h3>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Garantías</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir ofertas exclusivas.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BECKAIR. Josue Daniel Betancurth Reyes. Todos los derechos reservados.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
